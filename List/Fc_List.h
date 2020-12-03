@@ -114,7 +114,7 @@ public:
 
 
 private:
-	string Fcname;		///<key �̸�
+	string Fcname;		///<key ÀÌ¸§
 	DoubleLinkedList<FileType>* Flist;			///<key list
 	string Description;
 };
