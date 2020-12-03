@@ -16,7 +16,7 @@ Application::~Application()
 	delete ui;
 }
 
-//Áñ°ÜÃ£±â ¸®½ºÆ® ¸Ş´º ¶ç¿ì±â
+//ì¦ê²¨ì°¾ê¸° ë¦¬ìŠ¤íŠ¸ ë©”ë‰´ ë„ìš°ê¸°
 void Application::open_fcList()
 {
 	FcMenu fc;
@@ -25,7 +25,7 @@ void Application::open_fcList()
 	fc.exec();
 }
 
-//ÄÁÅÙÃ÷ °ü¸®(ÀúÀå, ¼öÁ¤, »èÁ¦) ¸Ş´º ¶ç¿ì±â
+//ì»¨í…ì¸  ê´€ë¦¬(ì €ì¥, ìˆ˜ì •, ì‚­ì œ) ë©”ë‰´ ë„ìš°ê¸°
 void Application::contents_menu()
 {
 	ContentsMenu menu;
@@ -34,7 +34,7 @@ void Application::contents_menu()
 	menu.exec();
 }
 
-//ÄÁÅÙÃ÷ Ã£±â ¸Ş´º ¶ç¿ì±â
+//ì»¨í…ì¸  ì°¾ê¸° ë©”ë‰´ ë„ìš°ê¸°
 void Application::find_contents()
 {
 	FindMenu find;
@@ -47,21 +47,21 @@ void Application::find_contents()
 void Application::AddFilePath(string _cname, string _filepath)
 {
 	FileType data(_cname, _filepath);
-	file_path.Add(data);	//FilePath List¿¡ ÀúÀå
+	file_path.Add(data);	//FilePath Listì— ì €ì¥
 }
 
 //Delete the file path type in the filePath list
 void Application::DeleteFilePath(string _cname)
 {
 	FileType data(_cname);
-	file_path.Delete(data);	//FilePath List¿¡¼­ ÇØ´çÇÏ´Â ÆÄÀÏ Å¸ÀÔ »èÁ¦
+	file_path.Delete(data);	//FilePath Listì—ì„œ í•´ë‹¹í•˜ëŠ” íŒŒì¼ íƒ€ì… ì‚­ì œ
 }
 
 //Replace the file path in the filepath list
 void Application::ReplaceFilePath(string _cname, string _filepath)
 {
 	FileType data(_cname, _filepath);
-	file_path.Replace(data);	//FilePath List¿¡ ÇØ´çÇÏ´Â ÆÄÀÏ °æ·Î º¯°æ
+	file_path.Replace(data);	//FilePath Listì— í•´ë‹¹í•˜ëŠ” íŒŒì¼ ê²½ë¡œ ë³€ê²½
 }
 
 //	Add new Fc record into list
@@ -69,10 +69,10 @@ void Application::AddFcList(string type, string data)
 {
 	Key_List Fitem(type);
 	if (FcList.Add(Fitem)) {
-		FcList.Find(Fitem)->info.SetDes(type + " Å¸ÀÔÀÇ Áñ°ÜÃ£±â ¸®½ºÆ®");
+		FcList.Find(Fitem)->info.SetDes(type + " íƒ€ì…ì˜ ì¦ê²¨ì°¾ê¸° ë¦¬ìŠ¤íŠ¸");
 	}
 
-	FcList.Find(Fitem)->info.GetList()->Add(data);	//ÇØ´çÇÏ´Â Key_List¿¡ ÀúÀå
+	FcList.Find(Fitem)->info.GetList()->Add(data);	//í•´ë‹¹í•˜ëŠ” Key_Listì— ì €ì¥
 }
 
 
@@ -83,7 +83,7 @@ void Application::AddEventlist(string _ename, string data)
 	if (EList.Add(item)) {
 		EList.Find(item)->info.SetDes(_ename);
 	}
-	EList.Find(item)->info.GetList()->Add(data);	//ÇØ´çÇÏ´Â Key_List¿¡ ÀúÀå
+	EList.Find(item)->info.GetList()->Add(data);	//í•´ë‹¹í•˜ëŠ” Key_Listì— ì €ì¥
 }
 
 //	Add new people record into list
@@ -91,9 +91,9 @@ void Application::AddPeopleList(string _pname, string data)
 {
 	Key_List pitem(_pname);
 	if (PeList.Add(pitem)) {
-		PeList.Find(pitem)->info.SetDes(_pname + " ÀÌ Æ÷ÇÔµÈ ÄÁÅÙÃ÷ ¸®½ºÆ®");
+		PeList.Find(pitem)->info.SetDes(_pname + " ì´ í¬í•¨ëœ ì»¨í…ì¸  ë¦¬ìŠ¤íŠ¸");
 	}
-	PeList.Find(pitem)->info.GetList()->Add(data);	//ÇØ´çÇÏ´Â Key_List¿¡ ÀúÀå
+	PeList.Find(pitem)->info.GetList()->Add(data);	//í•´ë‹¹í•˜ëŠ” Key_Listì— ì €ì¥
 }
 
 //	Add new place record into list
@@ -101,9 +101,9 @@ void Application::AddPlaceList(string _plname, string data)
 {
 	Key_List plitem(_plname);
 	if (PlList.Add(plitem)) {
-		PlList.Find(plitem)->info.SetDes(_plname + " Àå¼Ò°¡ Æ÷ÇÔµÈ ÄÁÅÙÃ÷ ¸®½ºÆ®");
+		PlList.Find(plitem)->info.SetDes(_plname + " ì¥ì†Œê°€ í¬í•¨ëœ ì»¨í…ì¸  ë¦¬ìŠ¤íŠ¸");
 	}
-	PlList.Find(plitem)->info.GetList()->Add(data);	//ÇØ´çÇÏ´Â Key_List¿¡ ÀúÀå
+	PlList.Find(plitem)->info.GetList()->Add(data);	//í•´ë‹¹í•˜ëŠ” Key_Listì— ì €ì¥
 }
 
 
@@ -111,10 +111,10 @@ void Application::AddPlaceList(string _plname, string data)
 int Application::DeleteEventType(string _ename, string data)
 {
 	Key_List eitem(_ename);
-	DoubleNode<Key_List>* temp = EList.Find(eitem);	//EventÀÇ Node pointer
+	DoubleNode<Key_List>* temp = EList.Find(eitem);	//Eventì˜ Node pointer
 	if (temp != nullptr) {
-		temp->info.GetList()->Delete(data);	//µ¥ÀÌÅÍ »èÁ¦
-		if (temp->info.GetList()->GetLength() == 0) {	//¸¸¾à EventListÅ¸ÀÔ ¾È¿¡ ÀÖ´Â list ±æÀÌ°¡ 0ÀÌ¸é Event»èÁ¦
+		temp->info.GetList()->Delete(data);	//ë°ì´í„° ì‚­ì œ
+		if (temp->info.GetList()->GetLength() == 0) {	//ë§Œì•½ EventListíƒ€ì… ì•ˆì— ìˆëŠ” list ê¸¸ì´ê°€ 0ì´ë©´ Eventì‚­ì œ
 			EList.Delete(eitem);
 		}
 		return 1;
@@ -126,10 +126,10 @@ int Application::DeleteEventType(string _ename, string data)
 int Application::DeletePeopleType(string _pname, string data)
 {
 	Key_List pitem(_pname);
-	DoubleNode<Key_List>* plist = PeList.Find(pitem);	//PeopleÀÇ Node pointer
+	DoubleNode<Key_List>* plist = PeList.Find(pitem);	//Peopleì˜ Node pointer
 	if (plist != nullptr) {
-		plist->info.GetList()->Delete(data);	//µ¥ÀÌÅÍ »èÁ¦
-		if (plist->info.GetList()->GetLength() == 0) {	//¸¸¾à ¾È¿¡ ÀÖ´Â list ±æÀÌ°¡ 0ÀÌ¸é »èÁ¦
+		plist->info.GetList()->Delete(data);	//ë°ì´í„° ì‚­ì œ
+		if (plist->info.GetList()->GetLength() == 0) {	//ë§Œì•½ ì•ˆì— ìˆëŠ” list ê¸¸ì´ê°€ 0ì´ë©´ ì‚­ì œ
 			PeList.Delete(pitem);
 		}
 		return 1;
@@ -141,10 +141,10 @@ int Application::DeletePeopleType(string _pname, string data)
 int Application::DeletePlaceType(string _pname, string data)
 {
 	Key_List plitem(_pname);
-	DoubleNode<Key_List>* plist = PlList.Find(plitem);	//PlaceÀÇ Node pointer
+	DoubleNode<Key_List>* plist = PlList.Find(plitem);	//Placeì˜ Node pointer
 	if (plist != nullptr) {
-		plist->info.GetList()->Delete(data);	//µ¥ÀÌÅÍ »èÁ¦
-		if (plist->info.GetList()->GetLength() == 0) {	//¸¸¾à ¾È¿¡ ÀÖ´Â list ±æÀÌ°¡ 0ÀÌ¸é »èÁ¦
+		plist->info.GetList()->Delete(data);	//ë°ì´í„° ì‚­ì œ
+		if (plist->info.GetList()->GetLength() == 0) {	//ë§Œì•½ ì•ˆì— ìˆëŠ” list ê¸¸ì´ê°€ 0ì´ë©´ ì‚­ì œ
 			PlList.Delete(plitem);
 		}
 		return 1;
@@ -156,10 +156,10 @@ int Application::DeletePlaceType(string _pname, string data)
 int Application::DeleteFcType(string type, string name)
 {
 	Key_List data(type);
-	DoubleNode<Key_List>* Flist = FcList.Find(data);	//FcÀÇ Node pointer
+	DoubleNode<Key_List>* Flist = FcList.Find(data);	//Fcì˜ Node pointer
 	if (Flist != nullptr) {
-		Flist->info.GetList()->Delete(name);		//µ¥ÀÌÅÍ »èÁ¦
-		if (Flist->info.GetList()->GetLength() == 0) {		//¸¸¾à ¾È¿¡ ÀÖ´Â list ±æÀÌ°¡ 0ÀÌ¸é »èÁ¦
+		Flist->info.GetList()->Delete(name);		//ë°ì´í„° ì‚­ì œ
+		if (Flist->info.GetList()->GetLength() == 0) {		//ë§Œì•½ ì•ˆì— ìˆëŠ” list ê¸¸ì´ê°€ 0ì´ë©´ ì‚­ì œ
 			FcList.Delete(data);
 		}
 		return 1;
@@ -172,37 +172,37 @@ int Application::DeleteFcType(string type, string name)
 bool Application::SearchByname(string name) {
 	DoublyIterator<ItemType> iter(m_List);
 	DoubleNode<ItemType>* node;
-	bool found = false;		//ÄÁÅÙÃ÷ Ã£¾Ò´ÂÁö ¾Ë·ÁÁÜ
+	bool found = false;		//ì»¨í…ì¸  ì°¾ì•˜ëŠ”ì§€ ì•Œë ¤ì¤Œ
 	while (iter.NotNull()) {
 		node = iter.GetCurNode();
-		if (node->info.GetName() == name||found) {	//Ã³À½ µ¹¶§´Â ÀÌ¸§ÀÌ °°À»¶§, ÄÁÅÙÃ÷¸¦ Ã£Àº ÈÄ¿¡´Â found¸¦ ÅëÇØ¼­ if¹® ¾ÈÀ¸·Î µé¾î°¨.
-			found = true;	//ÄÁÅÙÃ÷ Ã£À¸¸é true°ª
+		if (node->info.GetName() == name||found) {	//ì²˜ìŒ ëŒë•ŒëŠ” ì´ë¦„ì´ ê°™ì„ë•Œ, ì»¨í…ì¸ ë¥¼ ì°¾ì€ í›„ì—ëŠ” foundë¥¼ í†µí•´ì„œ ifë¬¸ ì•ˆìœ¼ë¡œ ë“¤ì–´ê°.
+			found = true;	//ì»¨í…ì¸  ì°¾ìœ¼ë©´ trueê°’
 			node->info.PlusView();
-			ShowDetail show;	//ÄÁÅÙÃ÷ µğÅ×ÀÏ º¸¿©ÁÖ´Â È­¸é
+			ShowDetail show;	//ì»¨í…ì¸  ë””í…Œì¼ ë³´ì—¬ì£¼ëŠ” í™”ë©´
 			show.setModal(true);
-			show.applyApp(this);	//application µ¿±âÈ­
-			show.set(node->info);	//showÈ­¸é¿¡ ÄÁÅÙÃ÷ Á¤º¸ ¼¼ÆÃÇÏ±â
+			show.applyApp(this);	//application ë™ê¸°í™”
+			show.set(node->info);	//showí™”ë©´ì— ì»¨í…ì¸  ì •ë³´ ì„¸íŒ…í•˜ê¸°
 			show.exec();
-			if (node->info.GetView() > 20 && !node->info.GetFc()) {	//¸¸¾à viewpoint°¡ 20ÀÌ ³Ñ°í, ¾ÆÁ÷ fcList¿¡ Æ÷ÇÔµÇ¾îÀÖÁö ¾ÊÀ¸¸é fclist¿¡ ÀúÀå.
-				node->info.changeFc();	//fclist Æ÷ÇÔ À¯¹« true·Î ¹Ù²ãÁÜ.
+			if (node->info.GetView() > 20 && !node->info.GetFc()) {	//ë§Œì•½ viewpointê°€ 20ì´ ë„˜ê³ , ì•„ì§ fcListì— í¬í•¨ë˜ì–´ìˆì§€ ì•Šìœ¼ë©´ fclistì— ì €ì¥.
+				node->info.changeFc();	//fclist í¬í•¨ ìœ ë¬´ trueë¡œ ë°”ê¿”ì¤Œ.
 				AddFcList(node->info.GetType(), node->info.GetName());	// Add Fc List
 			}
 			switch (show.Getnum())
 			{
-			case 0:	//¸Ş´º·Î µ¹¾Æ°¡±â ¹öÆ°À» ´©¸£¸é Á¾·ù 
+			case 0:	//ë©”ë‰´ë¡œ ëŒì•„ê°€ê¸° ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¢…ë¥˜ 
 				return true;
 				break;
-			case 1:	//ÀÌÀü ¹öÆ°À» ´©¸£¸é BACK NOT NULLÀÏ¶§¸¸ ÀÌÀü ³ëµå·Î iterator ¿òÁ÷ÀÓ
+			case 1:	//ì´ì „ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ BACK NOT NULLì¼ë•Œë§Œ ì´ì „ ë…¸ë“œë¡œ iterator ì›€ì§ì„
 				if (iter.BackNotNull())
 					iter.Back();
 				else
-					QMessageBox::information(this, "ERROR", "FIRST CONTENTS!!");	//BACK NULLÀÌ¸é °æ°íÃ¢ ¶ç¿öÁÜ
+					QMessageBox::information(this, "ERROR", "FIRST CONTENTS!!");	//BACK NULLì´ë©´ ê²½ê³ ì°½ ë„ì›Œì¤Œ
 				break;
-			case 2:	//´ÙÀ½ ¹öÆ°À» ´©¸£¸é NEXT NOT NULLÀÏ ¶§ ´ÙÀ½ ³ëµå·Î  iterator ¿òÁ÷ÀÓ
+			case 2:	//ë‹¤ìŒ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ NEXT NOT NULLì¼ ë•Œ ë‹¤ìŒ ë…¸ë“œë¡œ  iterator ì›€ì§ì„
 				if (iter.NextNotNull())
 					iter.Next();
 				else
-					QMessageBox::information(this, "ERROR", "LAST CONTENTS!!");	//NEXT NULLÀÌ¸é °æ°íÃ¢ ¶ç¿öÁÜ
+					QMessageBox::information(this, "ERROR", "LAST CONTENTS!!");	//NEXT NULLì´ë©´ ê²½ê³ ì°½ ë„ì›Œì¤Œ
 				break;
 			default:
 				break;
@@ -211,7 +211,7 @@ bool Application::SearchByname(string name) {
 		else
 			iter.Next();
 	}
-	//¸¸¾à ÄÁÅÙÃ÷¸¦ Ã£±â ¸øÇÏ¸é false ¸®ÅÏÇÏ±â
+	//ë§Œì•½ ì»¨í…ì¸ ë¥¼ ì°¾ê¸° ëª»í•˜ë©´ false ë¦¬í„´í•˜ê¸°
 	return false;
 }
 
@@ -223,32 +223,32 @@ int Application::SearchByCnameAndDisplay(string name, DoublyIterator<string>& it
 		node = iter.GetCurNode();
 		if (node->info.GetName() == name) {
 			node->info.PlusView();
-			ShowDetail show;	//ÄÁÅÙÃ÷ µğÅ×ÀÏ º¸¿©ÁÖ´Â È­¸é
+			ShowDetail show;	//ì»¨í…ì¸  ë””í…Œì¼ ë³´ì—¬ì£¼ëŠ” í™”ë©´
 			show.setModal(true);
-			show.applyApp(this);	//application µ¿±âÈ­
-			show.set(node->info);	//showÈ­¸é¿¡ ÄÁÅÙÃ÷ Á¤º¸ ¼¼ÆÃÇÏ±â
+			show.applyApp(this);	//application ë™ê¸°í™”
+			show.set(node->info);	//showí™”ë©´ì— ì»¨í…ì¸  ì •ë³´ ì„¸íŒ…í•˜ê¸°
 			show.exec();
-			if (node->info.GetView() > 20 && !node->info.GetFc()) {	//¸¸¾à viewpoint°¡ 20ÀÌ ³Ñ°í, ¾ÆÁ÷ fcList¿¡ Æ÷ÇÔµÇ¾îÀÖÁö ¾ÊÀ¸¸é fclist¿¡ ÀúÀå.
-				node->info.changeFc();	//fclist Æ÷ÇÔ À¯¹« true·Î ¹Ù²ãÁÜ.
+			if (node->info.GetView() > 20 && !node->info.GetFc()) {	//ë§Œì•½ viewpointê°€ 20ì´ ë„˜ê³ , ì•„ì§ fcListì— í¬í•¨ë˜ì–´ìˆì§€ ì•Šìœ¼ë©´ fclistì— ì €ì¥.
+				node->info.changeFc();	//fclist í¬í•¨ ìœ ë¬´ trueë¡œ ë°”ê¿”ì¤Œ.
 				AddFcList(node->info.GetType(), node->info.GetName());	// Add Fc List
 			}
 			switch (show.Getnum())
 			{
-			case 0:	//¸Ş´º·Î µ¹¾Æ°¡±â ¹öÆ°À» ´©¸£¸é Á¾·ù 
+			case 0:	//ë©”ë‰´ë¡œ ëŒì•„ê°€ê¸° ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¢…ë¥˜ 
 				return 0;
 				break;
-			case 1:	//ÀÌÀü ¹öÆ°À» ´©¸£¸é BACK NOT NULLÀÏ¶§¸¸ ÀÌÀü ³ëµå·Î iterator ¿òÁ÷ÀÓ
+			case 1:	//ì´ì „ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ BACK NOT NULLì¼ë•Œë§Œ ì´ì „ ë…¸ë“œë¡œ iterator ì›€ì§ì„
 				if (iter2.BackNotNull())
 					iter2.Back();
 				else
-					QMessageBox::information(this, "ERROR", "FIRST CONTENTS!!");	//BACK NULLÀÌ¸é °æ°íÃ¢ ¶ç¿öÁÜ
+					QMessageBox::information(this, "ERROR", "FIRST CONTENTS!!");	//BACK NULLì´ë©´ ê²½ê³ ì°½ ë„ì›Œì¤Œ
 				return 1;
 				break;
-			case 2:	//´ÙÀ½ ¹öÆ°À» ´©¸£¸é NEXT NOT NULLÀÏ ¶§ ´ÙÀ½ ³ëµå·Î  iterator ¿òÁ÷ÀÓ.
+			case 2:	//ë‹¤ìŒ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ NEXT NOT NULLì¼ ë•Œ ë‹¤ìŒ ë…¸ë“œë¡œ  iterator ì›€ì§ì„.
 				if (iter2.NextNotNull())
 					iter2.Next();
 				else
-					QMessageBox::information(this, "ERROR", "LAST CONTENTS!!");	//NEXT NULLÀÌ¸é °æ°íÃ¢ ¶ç¿öÁÜ
+					QMessageBox::information(this, "ERROR", "LAST CONTENTS!!");	//NEXT NULLì´ë©´ ê²½ê³ ì°½ ë„ì›Œì¤Œ
 				return 1;
 				break;
 			default:
@@ -261,37 +261,37 @@ int Application::SearchByCnameAndDisplay(string name, DoublyIterator<string>& it
 	return -1;
 }
 
-// Á¤º¸¸¦ ºÒ·¯¿Ã ÆÄÀÏÀ» ¿©´Â ÇÔ¼ö
+// ì •ë³´ë¥¼ ë¶ˆëŸ¬ì˜¬ íŒŒì¼ì„ ì—¬ëŠ” í•¨ìˆ˜
 int Application::OpenInFile(char* fileName)
 {
-	m_InFile.open(fileName);	// ºÒ·¯¿À±â À§ÇÑ ÆÄÀÏ ¿­±â
+	m_InFile.open(fileName);	// ë¶ˆëŸ¬ì˜¤ê¸° ìœ„í•œ íŒŒì¼ ì—´ê¸°
 
-	// ÆÄÀÏ ¿ÀÇÂ¿¡ ¼º°øÇÏ¸é 1, ±×·¸Áö ¾Ê´Ù¸é 0À» ¸®ÅÏ.
+	// íŒŒì¼ ì˜¤í”ˆì— ì„±ê³µí•˜ë©´ 1, ê·¸ë ‡ì§€ ì•Šë‹¤ë©´ 0ì„ ë¦¬í„´.
 	if (!m_InFile)	return 0;
 	else	return 1;
 }
 
 
-// Á¤º¸¸¦ ÀúÀåÇÒ ÆÄÀÏÀ» ¿©´Â ÇÔ¼ö
+// ì •ë³´ë¥¼ ì €ì¥í•  íŒŒì¼ì„ ì—¬ëŠ” í•¨ìˆ˜
 int Application::OpenOutFile(char* fileName)
 {
-	m_OutFile.open(fileName);	// ÀúÀåÇÏ±â À§ÇÑ ÆÄÀÏ ¿­±â
+	m_OutFile.open(fileName);	// ì €ì¥í•˜ê¸° ìœ„í•œ íŒŒì¼ ì—´ê¸°
 
-	// ÆÄÀÏ ¿ÀÇÂ¿¡ ¼º°øÇÏ¸é 1, ±×·¸Áö ¾Ê´Ù¸é 0À» ¸®ÅÏ.
+	// íŒŒì¼ ì˜¤í”ˆì— ì„±ê³µí•˜ë©´ 1, ê·¸ë ‡ì§€ ì•Šë‹¤ë©´ 0ì„ ë¦¬í„´.
 	if (!m_OutFile)	return 0;
 	else	return 1;
 }
 
-// ÀĞ±â À§ÇÑ ÆÄÀÏÀ» ¿­¾î ÆÄÀÏ¿¡ ÀÖ´Â ¸ğµç µ¥ÀÌÅÍ¸¦ ºÒ·¯¿À°í µ¥ÀÌÅÍµé·Î ¸®½ºÆ®¸¦ ¸¸µç´Ù.
+// ì½ê¸° ìœ„í•œ íŒŒì¼ì„ ì—´ì–´ íŒŒì¼ì— ìˆëŠ” ëª¨ë“  ë°ì´í„°ë¥¼ ë¶ˆëŸ¬ì˜¤ê³  ë°ì´í„°ë“¤ë¡œ ë¦¬ìŠ¤íŠ¸ë¥¼ ë§Œë“ ë‹¤.
 int Application::ReadDataFromFile()
 {
-	ItemType data;	// ÀĞ±â¿ë ÀÓ½Ã º¯¼ö
+	ItemType data;	// ì½ê¸°ìš© ì„ì‹œ ë³€ìˆ˜
 	QMessageBox::information(this, "ERROR", ui->file_name->text());
 	string file = ui->file_name->text().toStdString();
 	ui->file_name->setText("");
 	char filename[FILENAMESIZE];
 	strcpy(filename, file.c_str());
-	// file open, open error°¡ ¹ß»ıÇÏ¸é 0À» ¸®ÅÏ
+	// file open, open errorê°€ ë°œìƒí•˜ë©´ 0ì„ ë¦¬í„´
 	if (!OpenInFile(filename))
 	{
 		QMessageBox::information(this, "ERROR", "FAIL TO OPEN FILE");
@@ -299,32 +299,32 @@ int Application::ReadDataFromFile()
 	}
 		
 
-	// ÆÄÀÏÀÇ ¸ğµç ³»¿ëÀ» ÀĞ¾î list¿¡ Ãß°¡
+	// íŒŒì¼ì˜ ëª¨ë“  ë‚´ìš©ì„ ì½ì–´ listì— ì¶”ê°€
 	while (!m_InFile.eof())
 	{
-		// array¿¡ ÇĞ»ıµéÀÇ Á¤º¸°¡ µé¾îÀÖ´Â structure ÀúÀå
+		// arrayì— í•™ìƒë“¤ì˜ ì •ë³´ê°€ ë“¤ì–´ìˆëŠ” structure ì €ì¥
 		data.ReadDataFromFile(m_InFile);
 		m_List.Add(data);
 		FileType input(data.GetName(), data.GetFile());
 		file_path.Add(input);
 	}
 
-	m_InFile.close();	// ÆÄÀÏÀ» ´İ´Â´Ù.
+	m_InFile.close();	// íŒŒì¼ì„ ë‹«ëŠ”ë‹¤.
 	QMessageBox::information(this, "SUCCESS", "READ FILE");
 
 	return 1;
 }
 
 
-// ¾²±â À§ÇÑ ÆÄÀÏÀ» ¿­¾î ¸®½ºÆ®ÀÇ ¸ğµç Á¤º¸µéÀ» ÀúÀåÇÑ´Ù.
+// ì“°ê¸° ìœ„í•œ íŒŒì¼ì„ ì—´ì–´ ë¦¬ìŠ¤íŠ¸ì˜ ëª¨ë“  ì •ë³´ë“¤ì„ ì €ì¥í•œë‹¤.
 int Application::WriteDataToFile()
 {
-	ItemType data;	// ¾²±â¿ë ÀÓ½Ã º¯¼ö
+	ItemType data;	// ì“°ê¸°ìš© ì„ì‹œ ë³€ìˆ˜
 	string file = ui->file_name->text().toStdString();
 	char filename[FILENAMESIZE];
 	ui->file_name->setText("");
 	strcpy(filename, file.c_str());
-	// file open, open error°¡ ¹ß»ıÇÏ¸é 0À» ¸®ÅÏ
+	// file open, open errorê°€ ë°œìƒí•˜ë©´ 0ì„ ë¦¬í„´
 	if (!OpenOutFile(filename)) {
 		QMessageBox::information(this, "ERROR", "FAIL TO MAKE FILE");
 		return 0;
@@ -334,7 +334,7 @@ int Application::WriteDataToFile()
 		QMessageBox::information(this, "ERROR", "LIST IS EMPTY");
 		return 0;
 	}
-	// listÀÇ ¸ğµç µ¥ÀÌÅÍ¸¦ ÆÄÀÏ¿¡ ¾²±â
+	// listì˜ ëª¨ë“  ë°ì´í„°ë¥¼ íŒŒì¼ì— ì“°ê¸°
 	DoublyIterator<ItemType> itor(m_List);
 	while (itor.NotNull())
 	{
@@ -342,7 +342,7 @@ int Application::WriteDataToFile()
 		itor.Next();
 	}
 
-	m_OutFile.close();	// ÆÄÀÏÀ» ´İ´Â´Ù.
+	m_OutFile.close();	// íŒŒì¼ì„ ë‹«ëŠ”ë‹¤.
 	QMessageBox::information(this, "SUCCESS", "MAKE FILE");
 	return 1;
 }
@@ -428,15 +428,15 @@ void  Application::display_record()
 	QString file;
 	ItemType contents(_cname);
 	node = m_List.Find(contents);
-	ShowDetail show;	//ÄÁÅÙÃ÷ µğÅ×ÀÏ º¸¿©ÁÖ´Â È­¸é
+	ShowDetail show;	//ì»¨í…ì¸  ë””í…Œì¼ ë³´ì—¬ì£¼ëŠ” í™”ë©´
 	show.setModal(true);
-	show.applyApp(this);	//application µ¿±âÈ­
-	show.set(node->info);	//showÈ­¸é¿¡ ÄÁÅÙÃ÷ Á¤º¸ ¼¼ÆÃÇÏ±â
+	show.applyApp(this);	//application ë™ê¸°í™”
+	show.set(node->info);	//showí™”ë©´ì— ì»¨í…ì¸  ì •ë³´ ì„¸íŒ…í•˜ê¸°
 	show.hide_button();
 	show.exec();
 	file = QString::fromStdString(node->info.GetFile());
-	if (node->info.GetView() > 20 && !node->info.GetFc()) {	//¸¸¾à viewpoint°¡ 20ÀÌ ³Ñ°í, ¾ÆÁ÷ fcList¿¡ Æ÷ÇÔµÇ¾îÀÖÁö ¾ÊÀ¸¸é fclist¿¡ ÀúÀå.
-		node->info.changeFc();	//fclist Æ÷ÇÔ À¯¹« true·Î ¹Ù²ãÁÜ.
+	if (node->info.GetView() > 20 && !node->info.GetFc()) {	//ë§Œì•½ viewpointê°€ 20ì´ ë„˜ê³ , ì•„ì§ fcListì— í¬í•¨ë˜ì–´ìˆì§€ ì•Šìœ¼ë©´ fclistì— ì €ì¥.
+		node->info.changeFc();	//fclist í¬í•¨ ìœ ë¬´ trueë¡œ ë°”ê¿”ì¤Œ.
 		AddFcList(node->info.GetType(), node->info.GetName());	// Add Fc List
 	}
 	QPixmap img;
