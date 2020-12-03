@@ -23,9 +23,9 @@ public:
 	~InputFcType();
 
 	/**
-   *	@brief	FcMenu¸¦ µ¿±âÈ­ÇÔ
+   *	@brief	FcMenuë¥¼ ë™ê¸°í™”í•¨
    *	@pre	none
-   *	@post	FcMenu°¡ µ¿±âÈ­µÊ
+   *	@post	FcMenuê°€ ë™ê¸°í™”ë¨
    */
 	void applyFc(FcMenu* fc) { this->fc = fc; }
 
@@ -39,23 +39,23 @@ public:
 public slots:
 
 	/**
-   *	@brief	typeÀ» »çÁøÀ¸·Î ÀúÀå
+   *	@brief	typeì„ ì‚¬ì§„ìœ¼ë¡œ ì €ìž¥
    *	@pre	click
-   *	@post	Å¸ÀÔÀÌ »çÁøÀ¸·Î ÀúÀåµÊ
+   *	@post	íƒ€ìž…ì´ ì‚¬ì§„ìœ¼ë¡œ ì €ìž¥ë¨
    */
 	void find_pic();
 
 	/**
-   *	@brief	typeÀ» µ¿¿µ»óÀ¸·Î ÀúÀå
+   *	@brief	typeì„ ë™ì˜ìƒìœ¼ë¡œ ì €ìž¥
    *	@pre	click
-   *	@post	Å¸ÀÔÀÌ µ¿¿µ»óÀ¸·Î ÀúÀåµÊ
+   *	@post	íƒ€ìž…ì´ ë™ì˜ìƒìœ¼ë¡œ ì €ìž¥ë¨
    */
 	void find_video();
 
 	/**
-   *	@brief	typeÀ» ÆÄ³ë¶ó¸¶À¸·Î ÀúÀå
+   *	@brief	typeì„ íŒŒë…¸ë¼ë§ˆìœ¼ë¡œ ì €ìž¥
    *	@pre	click
-   *	@post	Å¸ÀÔÀÌ ÆÄ³ë¶ó¸¶À¸·Î ÀúÀåµÊ
+   *	@post	íƒ€ìž…ì´ íŒŒë…¸ë¼ë§ˆìœ¼ë¡œ ì €ìž¥ë¨
    */
 	void find_panorama();
 
