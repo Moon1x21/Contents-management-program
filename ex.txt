@@ -1,4 +1,0 @@
-
-a 2000-01-01 사진 a a a a 0 C:/Users/USER/source/repos/QtWidgetsApplication1/821759867_640x360.jpg 1 
-s 2000-01-01 사진 s s s s 0 C:/Users/USER/Pictures/Camera Roll/WIN_20200818_15_48_56_Pro.jpg 1 
-d 2000-01-01 사진 d d d d 0 C:/Users/USER/Pictures/Camera Roll/WIN_20200818_15_48_51_Pro.jpg 1 
