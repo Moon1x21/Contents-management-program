@@ -18,11 +18,11 @@ int Fc_list::AddPlist(FileType inData)
 //	Find the data and delete the data record in the list
 int Fc_list::DeletePlist(FileType& data)
 {
-	int pre = Flist->GetLength();//ÀÌÀü item°³¼ö¸¦ ¹Ş¾Æ¿Â´Ù.
+	int pre = Flist->GetLength();//ì´ì „ itemê°œìˆ˜ë¥¼ ë°›ì•„ì˜¨ë‹¤.
 
 	Flist->Delete(data);
 
-	if (pre > Flist->GetLength()) //ÀÌÀü item°³¼öº¸´Ù ÇöÀç item°³¼ö°¡ ¸¹¾ÆÁö¸é Á¦°Å¼º°ø
+	if (pre > Flist->GetLength()) //ì´ì „ itemê°œìˆ˜ë³´ë‹¤ í˜„ì¬ itemê°œìˆ˜ê°€ ë§ì•„ì§€ë©´ ì œê±°ì„±ê³µ
 	{
 		return 1;
 	}
