@@ -14,23 +14,23 @@ InputFcType::~InputFcType()
 	delete ui;
 }
 
-//typeÀ» »çÁøÀ¸·Î ÀúÀå
+//typeì„ ì‚¬ì§„ìœ¼ë¡œ ì €ìž¥
 void InputFcType::find_pic()
 {
 	this->close();
-	type = "»çÁø";
+	type = "ì‚¬ì§„";
 }
 
-//typeÀ» µ¿¿µ»óÀ¸·Î ÀúÀå
+//typeì„ ë™ì˜ìƒìœ¼ë¡œ ì €ìž¥
 void InputFcType::find_video()
 {
 	this->close();
-	type = "µ¿¿µ»ó";
+	type = "ë™ì˜ìƒ";
 }
 
-//typeÀ» ÆÄ³ë¶ó¸¶À¸·Î ÀúÀå
+//typeì„ íŒŒë…¸ë¼ë§ˆìœ¼ë¡œ ì €ìž¥
 void InputFcType::find_panorama()
 {
 	this->close();
-	type = "ÆÄ³ë¶ó¸¶";
+	type = "íŒŒë…¸ë¼ë§ˆ";
 }
