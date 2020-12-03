@@ -4,7 +4,7 @@ template<typename T>
 class DoublyIterator {
 	friend class DoubleLinkedList<T>;
 private:
-	const DoubleLinkedList<T>& m_list;			///< »ç¿ëÇÒ ¸®½ºÆ®ÀÇ ÂüÁ¶ º¯¼ö
+	const DoubleLinkedList<T>& m_list;			///< ì‚¬ìš©í•  ë¦¬ìŠ¤íŠ¸ì˜ ì°¸ì¡° ë³€ìˆ˜
 	DoubleNode<T>* m_CurPointer;			///< Node pointer for pointing current node to use iteration.
 public:
 
@@ -36,7 +36,7 @@ public:
 	T first();
 
 	/**
-	*	@brief	ÇöÀç ³ëµå Æ÷ÀÎÅÍÀÇ ´ÙÀ½ ³ëµå°¡ nullÀÎÁö ¾Æ´ÑÁö ÆÇ´ÜÇÏ´Â ¸Ş¼­µå.
+	*	@brief	í˜„ì¬ ë…¸ë“œ í¬ì¸í„°ì˜ ë‹¤ìŒ ë…¸ë“œê°€ nullì¸ì§€ ì•„ë‹Œì§€ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ.
 	*	@pre	Iterator has been initialized.
 	*	@post	None.
 	*	@return	nullptr true, otherwise false.
@@ -44,7 +44,7 @@ public:
 	bool NextNotNull();
 
 	/**
-	*	@brief	ÇöÀç ³ëµå¸¦ °¡¸®Å°´Â Æ÷ÀÎÅÍ°¡ nullÀÎÁö ¾Æ´ÑÁö ÆÇ´ÜÇÏ´Â ¸Ş¼­µå.
+	*	@brief	í˜„ì¬ ë…¸ë“œë¥¼ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„°ê°€ nullì¸ì§€ ì•„ë‹Œì§€ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ.
 	*	@pre	Iterator has been initialized.
 	*	@post	None.
 	*	@return	nullptr true, otherwise false.
@@ -52,7 +52,7 @@ public:
 	bool NotNull();
 
 	/**
-	*	@brief	ÇöÀç ³ëµå Æ÷ÀÎÅÍÀÇ Àü ³ëµå°¡ nullÀÎÁö ¾Æ´ÑÁö ÆÇ´ÜÇÏ´Â ¸Ş¼­µå.
+	*	@brief	í˜„ì¬ ë…¸ë“œ í¬ì¸í„°ì˜ ì „ ë…¸ë“œê°€ nullì¸ì§€ ì•„ë‹Œì§€ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ.
 	*	@pre	Iterator has been initialized.
 	*	@post	None.
 	*	@return	nullptr true, otherwise false.
@@ -60,7 +60,7 @@ public:
 	bool BackNotNull();
 
 	/**
-	*	@brief	Get current data of the list and go to the next node. ÇöÀç ³ëµå. °´Ã¼¹İÈ¯Àº return by value
+	*	@brief	Get current data of the list and go to the next node. í˜„ì¬ ë…¸ë“œ. ê°ì²´ë°˜í™˜ì€ return by value
 	*	@pre	Iterator has been initialized.
 	*	@post	Current pointer is moved to next node.
 	*	@return	Return current data pointer of the list.
@@ -101,7 +101,7 @@ T DoublyIterator<T>::first() {
 	}
 }
 
-//ÇöÀç ³ëµå Æ÷ÀÎÅÍÀÇ ´ÙÀ½ ³ëµå°¡ nullÀÎÁö ¾Æ´ÑÁö ÆÇ´ÜÇÏ´Â ¸Ş¼­µå.
+//í˜„ì¬ ë…¸ë“œ í¬ì¸í„°ì˜ ë‹¤ìŒ ë…¸ë“œê°€ nullì¸ì§€ ì•„ë‹Œì§€ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ.
 template<typename T>
 bool DoublyIterator<T>::NextNotNull() {
 	if (m_CurPointer->next == nullptr)
@@ -110,7 +110,7 @@ bool DoublyIterator<T>::NextNotNull() {
 		return true;
 }
 
-//ÇöÀç ³ëµå Æ÷ÀÎÅÍÀÇ Àü ³ëµå°¡ nullÀÎÁö ¾Æ´ÑÁö ÆÇ´ÜÇÏ´Â ¸Ş¼­µå.
+//í˜„ì¬ ë…¸ë“œ í¬ì¸í„°ì˜ ì „ ë…¸ë“œê°€ nullì¸ì§€ ì•„ë‹Œì§€ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ.
 template<typename T>
 bool DoublyIterator<T>::BackNotNull() {
 	if (m_CurPointer->back == nullptr)
@@ -119,7 +119,7 @@ bool DoublyIterator<T>::BackNotNull() {
 		return true;
 }
 
-//Get current data of the list and go to the next node. ÇöÀç ³ëµå.
+//Get current data of the list and go to the next node. í˜„ì¬ ë…¸ë“œ.
 template<typename T>
 DoubleNode<T>* DoublyIterator<T>::GetCurNode() {
 	return m_CurPointer;
@@ -131,7 +131,7 @@ void DoublyIterator<T>::operator = (const DoublyIterator<T>& data) {
 	m_CurPointer = data.m_CurPointer();
 }
 
-// ÇöÀç ¿ø¼Ò°¡ nullÀÎÁö °Ë»ç
+// í˜„ì¬ ì›ì†Œê°€ nullì¸ì§€ ê²€ì‚¬
 template <typename T>
 bool DoublyIterator<T>::NotNull() {
 	if (m_CurPointer == nullptr) {
