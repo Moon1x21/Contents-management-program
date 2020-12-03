@@ -14,7 +14,7 @@ QtWidgetsApplication1::~QtWidgetsApplication1()
     delete ui;
 }
 
-//�޴� â�� ȭ�鿡 ���
+//¸Þ´º Ã¢À» È­¸é¿¡ ¶ç¿ò
 void QtWidgetsApplication1::start()
 {
     this->hide();
