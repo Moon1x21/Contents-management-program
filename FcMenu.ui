@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FcMenu</class>
+ <widget class="QWidget" name="FcMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(100, 100, 160, 150);
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>291</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(100, 100, 160);
+border-color: rgb(255, 255, 255);
+border: 2px;</string>
+   </property>
+   <widget class="QPushButton" name="loadpic">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+    </property>
+    <property name="text">
+     <string>사진</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadvideo">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+    </property>
+    <property name="text">
+     <string>비디오</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadpanorama">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>190</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+    </property>
+    <property name="text">
+     <string>파노라마</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 11pt &quot;DX별과그대&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;어떤 타입의 추억을 찾아볼까요?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="add_fc">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>자주찾는 추억에 추가하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delete_fc">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>자주찾는 추억 삭제하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="view_fc">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>자주찾는 추억 간단보기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="view_fc_mc">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>자주찾는 추억 상세보기</string>
+   </property>
+  </widget>
+  <zorder>add_fc</zorder>
+  <zorder>delete_fc</zorder>
+  <zorder>view_fc</zorder>
+  <zorder>view_fc_mc</zorder>
+  <zorder>widget</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>add_fc</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>add_fc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_fc</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>delete_fc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_fc</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>view_fc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>81</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_fc_mc</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>view_fc_mc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadpanorama</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>select_pic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadvideo</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>select_video()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadpic</sender>
+   <signal>clicked()</signal>
+   <receiver>FcMenu</receiver>
+   <slot>select_pic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>add_fc()</slot>
+  <slot>delete_fc()</slot>
+  <slot>view_fc()</slot>
+  <slot>view_fc_mc()</slot>
+  <slot>select_pic()</slot>
+  <slot>select_video()</slot>
+  <slot>select_panorama()</slot>
+ </slots>
+</ui>

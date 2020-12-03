@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaveContents</class>
+ <widget class="QWidget" name="SaveContents">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(100, 100, 160, 150);</string>
+  </property>
+  <widget class="QCheckBox" name="c_fc">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>261</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot; ;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>즐겨찾는 추억상자에 저장할까요?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>380</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>완료</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>431</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(100, 100, 160);
+border-color: rgb(255, 255, 255);
+border: 2px;</string>
+   </property>
+   <widget class="QPushButton" name="loadpic">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>111</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+    </property>
+    <property name="text">
+     <string>사진</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadvideo">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>180</y>
+      <width>111</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+    </property>
+    <property name="text">
+     <string>동영상</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadpanorama">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>250</y>
+      <width>110</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border: 10px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>파노라마</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>50</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 11pt &quot;DX별과그대&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;어떤 타입의 추억을 업로드 할까요?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="cname">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>40</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 9pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="c_date">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>80</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cpeople">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>120</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 9pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cplace">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>160</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 9pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cevent">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>200</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 9pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="c_content">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>240</y>
+     <width>110</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 9pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="display">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>201</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>40</y>
+     <width>108</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;추억 이름&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>108</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;추억 날짜&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>108</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;함께한 사람들&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>160</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;추억 장소&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>237</x>
+     <y>200</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;추억 이벤트&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>250</y>
+     <width>108</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 11pt &quot;DX별과그대B&quot;;
+background-color: rgba(100, 100, 160, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;추억 내용적기&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>c_fc</zorder>
+  <zorder>submit</zorder>
+  <zorder>cname</zorder>
+  <zorder>c_date</zorder>
+  <zorder>cpeople</zorder>
+  <zorder>cplace</zorder>
+  <zorder>cevent</zorder>
+  <zorder>c_content</zorder>
+  <zorder>display</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>widget</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>submit</sender>
+   <signal>clicked()</signal>
+   <receiver>SaveContents</receiver>
+   <slot>open_window()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadvideo</sender>
+   <signal>clicked()</signal>
+   <receiver>SaveContents</receiver>
+   <slot>load_video()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadpanorama</sender>
+   <signal>clicked()</signal>
+   <receiver>SaveContents</receiver>
+   <slot>load_panorama()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadpic</sender>
+   <signal>clicked()</signal>
+   <receiver>SaveContents</receiver>
+   <slot>load_pic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>save_cname()</slot>
+  <slot>save_cplace()</slot>
+  <slot>save_cpeople()</slot>
+  <slot>save_cevent()</slot>
+  <slot>save_ccontents()</slot>
+  <slot>save_cdate()</slot>
+  <slot>save_fclist()</slot>
+  <slot>open_window()</slot>
+  <slot>load_pic()</slot>
+  <slot>load_video()</slot>
+  <slot>load_panorama()</slot>
+ </slots>
+</ui>

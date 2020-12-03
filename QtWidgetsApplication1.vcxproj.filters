@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{ea572b9d-d40d-4c0e-a5a6-76a13e424d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\List">
+      <UniqueIdentifier>{52b28b5c-7be1-4312-80c6-6f034fca4c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ListType">
+      <UniqueIdentifier>{cf4fbbdf-b6a3-4a0e-aff9-b21a31c19225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Type">
+      <UniqueIdentifier>{10f2e068-996a-42f7-88a1-42af2054e1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\Main">
+      <UniqueIdentifier>{77c25ffe-79d9-4b1c-99c0-bc852066903a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\FindMenu">
+      <UniqueIdentifier>{0dab1a3b-8d6e-47f7-bb60-fe347b0441b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\ContentsMenu">
+      <UniqueIdentifier>{dcff3c48-3dc0-4e92-8126-5fcca8f7e0f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\FcMenu">
+      <UniqueIdentifier>{5a30f7e8-7ef8-47f9-ac91-8758f2cddc43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\MyFile">
+      <UniqueIdentifier>{ea67f2f4-8e38-4197-b625-8267e40f4acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\ShowDetail">
+      <UniqueIdentifier>{cd93457a-ec55-4e1b-a51b-2cf33b52b685}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtWidgetsApplication1.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ItemType.cpp">
+      <Filter>Source Files\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentsMenu.cpp">
+      <Filter>Source Files\App\ContentsMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveContents.cpp">
+      <Filter>Source Files\App\ContentsMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="FcMenu.cpp">
+      <Filter>Source Files\App\FcMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="FindMenu.cpp">
+      <Filter>Source Files\App\FindMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="InputWindow.cpp">
+      <Filter>Source Files\App\FindMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files\App\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files\App\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="InputFcType.cpp">
+      <Filter>Source Files\App\FcMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="FileType.cpp">
+      <Filter>Source Files\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyList.cpp">
+      <Filter>Source Files\List</Filter>
+    </ClCompile>
+    <ClCompile Include="Fc_List.cpp">
+      <Filter>Source Files\List</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowDetail.cpp">
+      <Filter>Source Files\App\ShowDetail</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPlayer.cpp">
+      <Filter>Source Files\App\MyFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ContentsMenu.ui">
+      <Filter>Source Files\App\ContentsMenu</Filter>
+    </QtUic>
+    <QtUic Include="SaveContents.ui">
+      <Filter>Source Files\App\ContentsMenu</Filter>
+    </QtUic>
+    <QtUic Include="FindMenu.ui">
+      <Filter>Source Files\App\FindMenu</Filter>
+    </QtUic>
+    <QtUic Include="InputWindow.ui">
+      <Filter>Source Files\App\FindMenu</Filter>
+    </QtUic>
+    <QtUic Include="Application.ui">
+      <Filter>Source Files\App\Main</Filter>
+    </QtUic>
+    <QtUic Include="MainWindow.ui">
+      <Filter>Source Files\App\Main</Filter>
+    </QtUic>
+    <QtUic Include="InputFcType.ui">
+      <Filter>Source Files\App\FcMenu</Filter>
+    </QtUic>
+    <QtUic Include="FcMenu.ui">
+      <Filter>Source Files\App\FcMenu</Filter>
+    </QtUic>
+    <QtUic Include="ShowDetail.ui">
+      <Filter>Source Files\App\ShowDetail</Filter>
+    </QtUic>
+    <QtUic Include="VideoPlayer.ui">
+      <Filter>Source Files\App\MyFile</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ContentsMenu.h">
+      <Filter>Source Files\App\ContentsMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="SaveContents.h">
+      <Filter>Source Files\App\ContentsMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="FindMenu.h">
+      <Filter>Source Files\App\FindMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="InputWindow.h">
+      <Filter>Source Files\App\FindMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="Application.h">
+      <Filter>Source Files\App\Main</Filter>
+    </QtMoc>
+    <QtMoc Include="MainWindow.h">
+      <Filter>Source Files\App\Main</Filter>
+    </QtMoc>
+    <QtMoc Include="FcMenu.h">
+      <Filter>Source Files\App\FcMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="InputFcType.h">
+      <Filter>Source Files\App\FcMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="ShowDetail.h">
+      <Filter>Source Files\App\ShowDetail</Filter>
+    </QtMoc>
+    <QtMoc Include="VideoPlayer.h">
+      <Filter>Source Files\App\MyFile</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DoublyLinkedList.h">
+      <Filter>Source Files\ListType</Filter>
+    </ClInclude>
+    <ClInclude Include="DoublyIterator.h">
+      <Filter>Source Files\ListType</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemType.h">
+      <Filter>Source Files\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Source Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="FileType.h">
+      <Filter>Source Files\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyList.h">
+      <Filter>Source Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="Fc_List.h">
+      <Filter>Source Files\List</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

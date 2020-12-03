@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindMenu</class>
+ <widget class="QWidget" name="FindMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>373</width>
+    <height>338</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(100, 100, 160, 150);
+</string>
+  </property>
+  <widget class="QPushButton" name="Retrieve_name">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>이름으로 찾기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Retrieve_event">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>이벤트별로 찾기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Retrieve_people">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>사람별로 찾기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Retrieve_place">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>장소별로 찾기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Retrieve_keywords">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>키워드로 찾기</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>321</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(100, 100, 160, 250);
+</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>190</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+    </property>
+    <property name="text">
+     <string>찾기</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 9pt &quot;DX별과그대&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;이벤트 키워드를 입력하세요&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(100, 100, 160, 255);
+</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>190</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+     </property>
+     <property name="text">
+      <string>찾기</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 57 9pt &quot;DX별과그대&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;사람  키워드를 입력하세요&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>321</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(100, 100, 160, 250);
+</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>190</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+      </property>
+      <property name="text">
+       <string>찾기</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 57 9pt &quot;DX별과그대&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;장소  키워드를 입력하세요&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Retrieve_name</sender>
+   <signal>clicked()</signal>
+   <receiver>FindMenu</receiver>
+   <slot>Find_contents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>161</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>258</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Retrieve_event</sender>
+   <signal>clicked()</signal>
+   <receiver>FindMenu</receiver>
+   <slot>Find_Event()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Retrieve_people</sender>
+   <signal>clicked()</signal>
+   <receiver>FindMenu</receiver>
+   <slot>Find_People()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Retrieve_place</sender>
+   <signal>clicked()</signal>
+   <receiver>FindMenu</receiver>
+   <slot>Find_Place()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Retrieve_keywords</sender>
+   <signal>clicked()</signal>
+   <receiver>FindMenu</receiver>
+   <slot>Find_KeyWord()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FindMenu</receiver>
+   <slot>find_Key()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>589</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>539</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>553</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Find_contents()</slot>
+  <slot>Find_Event()</slot>
+  <slot>Find_People()</slot>
+  <slot>Find_Place()</slot>
+  <slot>Find_KeyWord()</slot>
+  <slot>set_name()</slot>
+  <slot>find_Key()</slot>
+ </slots>
+</ui>

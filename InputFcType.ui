@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InputFcType</class>
+ <widget class="QWidget" name="InputFcType">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>326</width>
+    <height>278</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(100, 100, 160, 150);</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>160</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="picture">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+      </property>
+      <property name="text">
+       <string>사진</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="video">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+      </property>
+      <property name="text">
+       <string>동영상</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="panorama">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;</string>
+      </property>
+      <property name="text">
+       <string>파노라마</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>picture</sender>
+   <signal>clicked()</signal>
+   <receiver>InputFcType</receiver>
+   <slot>find_pic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>video</sender>
+   <signal>clicked()</signal>
+   <receiver>InputFcType</receiver>
+   <slot>find_video()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>panorama</sender>
+   <signal>clicked()</signal>
+   <receiver>InputFcType</receiver>
+   <slot>find_panorama()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>49</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>find_pic()</slot>
+  <slot>find_video()</slot>
+  <slot>find_panorama()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ContentsMenu</class>
+ <widget class="QWidget" name="ContentsMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>356</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(100, 100, 160, 150);
+</string>
+  </property>
+  <widget class="QPushButton" name="addcontents">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>추억 저장하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deletecontents">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>추억 삭제하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="replacecontents">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>200</y>
+     <width>158</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,150);
+font: 57 11pt &quot;DX별과그대&quot;;
+border-color: rgb(0, 0, 0);
+border: 2px;</string>
+   </property>
+   <property name="text">
+    <string>추억 수정하기</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addcontents</sender>
+   <signal>clicked()</signal>
+   <receiver>ContentsMenu</receiver>
+   <slot>add_contents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deletecontents</sender>
+   <signal>clicked()</signal>
+   <receiver>ContentsMenu</receiver>
+   <slot>delete_contents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>329</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>replacecontents</sender>
+   <signal>clicked()</signal>
+   <receiver>ContentsMenu</receiver>
+   <slot>replace_contents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>add_contents()</slot>
+  <slot>delete_contents()</slot>
+  <slot>replace_contents()</slot>
+ </slots>
+</ui>
