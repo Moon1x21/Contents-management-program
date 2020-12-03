@@ -22,33 +22,33 @@ public:
 	*/
 	~ContentsMenu();
 	/**
-   *	@brief	Application¸¦ µ¿±âÈ­ÇÔ
+   *	@brief	Applicationë¥¼ ë™ê¸°í™”í•¨
    *	@pre	none
-   *	@post	Application°¡ µ¿±âÈ­µÊ
+   *	@post	Applicationê°€ ë™ê¸°í™”ë¨
    */
 	void applyApp(Application* app) { this->app = app; }
 public slots:
 
 	/**
-   *	@brief	ÄÁÅÙÃ÷ ÀúÀåÇÏ±â
+   *	@brief	ì»¨í…ì¸  ì €ìž¥í•˜ê¸°
    *	@pre	click
-   *	@post	ÄÁÅÙÃ÷ ÀúÀåÈ­¸éÀÌ ¶ç¿öÁö°í, ÄÁÅÙÃ÷ ÀúÀå.
+   *	@post	ì»¨í…ì¸  ì €ìž¥í™”ë©´ì´ ë„ì›Œì§€ê³ , ì»¨í…ì¸  ì €ìž¥.
    */
 	void add_contents();
 
 	/**
-   *	@brief	ÄÁÅÙÃ÷ »èÁ¦ÇÏ±â
+   *	@brief	ì»¨í…ì¸  ì‚­ì œí•˜ê¸°
    *	@pre	click
-   *	@post	ÄÁÅÙÃ÷ ÀÌ¸§À» Àû´Â È­¸éÀÌ ¶ç¿öÁö°í, ÇØ´çÇÏ´Â ÄÁÅÙÃ÷ »èÁ¦.
-   *	@return	»èÁ¦µÇ¸é 1, ¾Æ´Ï¸é 0
+   *	@post	ì»¨í…ì¸  ì´ë¦„ì„ ì ëŠ” í™”ë©´ì´ ë„ì›Œì§€ê³ , í•´ë‹¹í•˜ëŠ” ì»¨í…ì¸  ì‚­ì œ.
+   *	@return	ì‚­ì œë˜ë©´ 1, ì•„ë‹ˆë©´ 0
    */
 	int delete_contents();
 
 	/**
-   *	@brief	ÄÁÅÙÃ÷ ¼öÁ¤ÇÏ±â
+   *	@brief	ì»¨í…ì¸  ìˆ˜ì •í•˜ê¸°
    *	@pre	click
-   *	@post	ÄÁÅÙÃ÷ ÀÌ¸§À» Àû´Â È­¸éÀÌ ¶ç¿öÁö°í, ÇØ´çÇÏ´Â ÄÁÅÙÃ÷ ¼öÁ¤.
-   *	@return	¼öÁ¤µÇ¸é 1, ¾Æ´Ï¸é 0
+   *	@post	ì»¨í…ì¸  ì´ë¦„ì„ ì ëŠ” í™”ë©´ì´ ë„ì›Œì§€ê³ , í•´ë‹¹í•˜ëŠ” ì»¨í…ì¸  ìˆ˜ì •.
+   *	@return	ìˆ˜ì •ë˜ë©´ 1, ì•„ë‹ˆë©´ 0
    */
 	int replace_contents();
 
