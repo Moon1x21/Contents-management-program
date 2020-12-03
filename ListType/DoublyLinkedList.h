@@ -51,8 +51,8 @@ public:
 	*	@brief	Delete item into this list by the keys
 	*	@pre	List has been initialized.
 	*	@post	Item is deleted in this list..
-	*	@param	data	primary key°¡ ¹İµå½Ã Æ÷ÇÔµÇ¾î ÀÖ´Â ItemType °´Ã¼.
-	*	@return »èÁ¦ÇÒ ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ°¡ ÀÖÀ¸¸é »èÁ¦ ÈÄ 1, ¾øÀ¸¸é 0À» ¸®ÅÏ.
+	*	@param	data	primary keyê°€ ë°˜ë“œì‹œ í¬í•¨ë˜ì–´ ìˆëŠ” ItemType ê°ì²´.
+	*	@return ì‚­ì œí•  ì¼ì¹˜í•˜ëŠ” ë°ì´í„°ê°€ ìˆìœ¼ë©´ ì‚­ì œ í›„ 1, ì—†ìœ¼ë©´ 0ì„ ë¦¬í„´.
 	*/
 	int Delete(T& item);
 
@@ -60,7 +60,7 @@ public:
 	*	@brief	Replace item into this list by the keys
 	*	@pre	List has been initialized.
 	*	@post	Item is replaced in this list.
-	*	@param	data	primary key°¡ ¹İµå½Ã Æ÷ÇÔµÇ¾î ÀÖ´Â ItemType °´Ã¼.
+	*	@param	data	primary keyê°€ ë°˜ë“œì‹œ í¬í•¨ë˜ì–´ ìˆëŠ” ItemType ê°ì²´.
 	*/
 	int Replace(T& item);
 
@@ -185,7 +185,7 @@ int DoubleLinkedList<T>::Add(T& item)
 					return 0;
 				}
 				else {
-					if (!iter.NextNotNull()) { //¸ÇµÚ
+					if (!iter.NextNotNull()) { //ë§¨ë’¤
 						temp->next = data;
 						data->back = temp;
 						m_pLast = data;
