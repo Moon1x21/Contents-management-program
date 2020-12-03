@@ -1,5 +1,6 @@
 #include"Application.h"
 
+
 //default constructor
 Application::Application(QWidget* parent)
 	: QDialog(parent),
